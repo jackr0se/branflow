@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(18, 18, 18, 0.9);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0b0ff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f3a683;
+}
+
+.hero-section {
+    height: 100vh;
+    background: url('dummy-header.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    color: #f3a683;
+    font-size: 1.5rem;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    color: #e0b0ff;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Shop Section */
+.shop {
+    background-color: #1e1e1e;
+    padding: 50px;
+}
+
+.shop h2 {
+    color: #e0b0ff;
+    font-size: 2.5rem;
+}
+
+.shop p {
+    color: #f3a683;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-item {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    color: #e0b0ff;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #f3a683;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product-item button {
+    background-color: #f3a683;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #e0b0ff;
+}
+
+/* About Section */
+.about {
+    background-color: #121212;
+    padding: 50px;
+}
+
+.about h2 {
+    color: #e0b0ff;
+    font-size: 2.5rem;
+}
+
+.about p {
+    color: #f3a683;
+    margin-top: 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1e1e1e;
+    padding: 50px;
+}
+
+.contact h2 {
+    color: #e0b0ff;
+    font-size: 2.5rem;
+}
+
+.contact input, .contact textarea {
+    width: 70%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #333;
+    border: 1px solid #666;
+    color: #f3a683;
+}
+
+.contact button {
+    background-color: #f3a683;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #e0b0ff;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #a0a0a0;
+}
